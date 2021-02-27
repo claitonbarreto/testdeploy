@@ -1,0 +1,15 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker build -t claitonbarreto/testdeploy
+
+script:
+  - docker run claitonbarreto/testdeploy
+
+after_success:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin 
+
+  - docker push claitonbarreto/testdeploy
