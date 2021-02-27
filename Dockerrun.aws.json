@@ -4,7 +4,14 @@
         {
             "name": "testdeploy",
             "image": "claitonbarreto/testdeploy",
-            "memory": 128
+            "memory": 128,
+            "portMappings": [
+                {
+                    "containerPort":"8888",
+                    "hostPort":"80"
+                }
+            ]
+
         }
     ]
 }
