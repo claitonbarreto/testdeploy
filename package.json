@@ -7,6 +7,7 @@
     "express": "^4.17.1"
   },
   "scripts": {
-    "start": "node server"
+    "start": "node server",
+    "test":"echo 'App Test succsseful'"
   }
 }
