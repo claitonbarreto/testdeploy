@@ -8,6 +8,6 @@
   },
   "scripts": {
     "start": "node server",
-    "test":"echo 'App Test succsseful'"
+    "test":"echo \"Error: no test specified\""
   }
 }

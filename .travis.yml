@@ -7,7 +7,7 @@ before_install:
   - docker build -t claitonbarreto/testdeploy .
 
 script:
-  - docker run claitonbarreto/testdeploy
+  - docker run claitonbarreto/testdeploy yarn test
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin 
