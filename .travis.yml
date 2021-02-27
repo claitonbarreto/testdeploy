@@ -13,3 +13,15 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin 
 
   - docker push claitonbarreto/testdeploy
+
+deploy:
+  provider: elastibeanstalk
+  region: sa-east-1
+  app: testdeploy
+  env: Testdeploy-env
+  bucket_name: elasticbeanstalk-sa-east-1-056188145604
+  bucket_path: testdeploy
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
