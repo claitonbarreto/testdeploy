@@ -1,0 +1,11 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+        {
+            "name": "testdeploy",
+            "image": "claitonbarreto/testdeploy",
+            "memory": 128,
+            "essential": false
+        }
+    ]
+}
