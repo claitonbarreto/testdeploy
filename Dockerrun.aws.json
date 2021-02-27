@@ -4,8 +4,7 @@
         {
             "name": "testdeploy",
             "image": "claitonbarreto/testdeploy",
-            "memory": 128,
-            "essential": false
+            "memory": 128
         }
     ]
 }
