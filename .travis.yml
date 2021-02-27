@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t claitonbarreto/testdeploy
+  - docker build -t claitonbarreto/testdeploy .
 
 script:
   - docker run claitonbarreto/testdeploy
